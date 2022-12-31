@@ -1,0 +1,138 @@
+.logo{
+   display:inline-block;
+   width:8em;
+}
+.custom-text-box{
+  padding-left: 25px;
+}
+.custom-block-wrap{
+  margin:1.5em;
+}
+.second-carousel-image{
+  transform: scaleX(-1);
+}
+
+.sliding-row{
+
+}
+
+.location-title{
+margin-bottom: 50px;
+}
+.rotating{
+  position:relative;
+  height:20vh;
+  width:100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.first{
+  display: inline-block;
+  position:absolute;
+  color:#5bc1ac;
+  font-size: 3.5rem;
+  word-spacing: 1.4em;
+  animation: marquee 28s linear infinite;
+  right:-100%;
+  text-shadow: 1px 2px 2px rgba(46,91,173,0.6);
+}
+
+.second{
+  display: inline-block;
+  position: absolute;
+  color:#5bc1ac;
+  font-size: 3.5rem;
+  word-spacing: 1.4em;
+  animation:marqueesecond 28s linear infinite;
+  animation-delay: 14s;
+  right: 180%;
+  text-shadow: 1px 2px 2px rgba(46,91,173,0.6);
+}
+@keyframes marquee {
+  0%{
+    right:-2500px;
+  }
+
+  50%{
+    right:0px;
+  }
+100%{
+  right:2500px;
+}
+}
+@keyframes marqueesecond {
+    0%{
+      right:-2500px;
+
+    }
+    50%{
+      right:0;
+    }
+    100%{
+      right:2500px;
+    }
+}
+
+@media (max-width:600px) {
+  .first{
+    font-size: 2.5rem;
+  }
+  .second{
+    font-size: 2.5rem;
+  }
+  @keyframes marquee {
+    0%{
+      right:-1800px;
+    }
+
+    50%{
+      right:0px;
+    }
+  100%{
+    right:1800px;
+  }
+  }
+  @keyframes marqueesecond {
+      0%{
+        right:-1800px;
+
+      }
+      50%{
+        right:0;
+      }
+      100%{
+        right:1800px;
+      }
+  }
+}
+
+
+/* Book Servie page */
+
+
+.number-selection{
+  width:50px;
+  text-align:center;
+  padding: 0;
+
+}
+.selection-btn{
+  display: inline;
+  border: none;
+  background: none;
+
+}
+.selection-btn img{
+  width:20px;
+}
+.form-icon{
+  width:20px;
+}
+.gps-btn:hover {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-color: var(--white-color);
+}
+.small-text{
+  font-size: calc(0.61rem + 0.1vw);
+}
